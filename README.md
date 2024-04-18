@@ -1,24 +1,47 @@
-# README
+# To-Do List Manager
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Develop a simple to-do list manager application that allows users to create, read, update, and delete (CRUD) tasks. This project aims to assess your coding skills, understanding of software design principles, and familiarity with version control and testing.
 
-Things you may want to cover:
+## Tabel of Content
 
-* Ruby version
+1. Ruby Version
+2. Installation
+3. Starting the server
 
-* System dependencies
+## Ruby Version
 
-* Configuration
+To run this application you need to have ruby version of 3.0.0.
 
-* Database creation
+## Installation
 
-* Database initialization
+To install all the system dependency and gems is required to start the application. Run the below command
+```http 
+bundle install
+```
+To create database in the application.
+```http 
+rails db:create
+```
+To create required tables in the database in application.
+```http 
+rails db:migrate
+```
 
-* How to run the test suite
+To sample data in the tables by using faker gem.
+```http 
+rails db:seed
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Start the server
 
-* Deployment instructions
+To the server of the application run below command.
+```sh
+rails server
+```
 
-* ...
+## Running Tests
+
+To the run the test of the application run below command.
+```sh
+rails test
+```
