@@ -46,6 +46,8 @@ gem "devise"
 
 gem "bootstrap"
 
+gem 'faker'
+
 gem "sassc-rails"
 
 # Use Sass to process CSS

@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'faker'
+user = User.create(email: "test@example.com", password: "12345678")
+
+10.times do
+  Task.create!(title: Faker::Company.industry, body: Faker::Hipster.sentences.sample, user_id: user.id)
+end
